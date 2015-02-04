@@ -1,0 +1,67 @@
+* How to set up a custom keyboard layout in linux
+
+We want a custom keyboard layout with us-dvorak, us, ua layouts and
+modified Control, Meta, Super, and Hyper keys.  We will be able to use
+the ScrollLock key to cycle through the layouts.  Here is how to
+achieve this.
+
+** Create raw layout
+
+Run the command
+
+setxkbmap -model pc104 -layout us,us,ua -variant dvorak,, -option grp:sclk_toggle
+
+** Modify the position of Control, Meta, Super, and Hyper keys
+
+Put the following into ~/.Xmodmap:
+
+! .Xmodmap
+
+! Remap Control, Meta, Super, and Hyper keys.
+
+clear Control
+clear Mod1
+clear Mod4
+clear Mod5
+
+! Alt_L to Control_L
+keycode 64 = Control_L
+
+! Alt_R to Control_R
+keycode 108 = Control_R
+
+! Super_L to Alt_L
+keycode 133 = Alt_L
+
+! Super_R to Alt_R
+keycode 134 = Alt_R
+
+! Control_L to Super_L
+keycode 37 = Super_L
+
+! Control_R to Hyper_R
+keycode 105 = Hyper_R
+
+! Menu to Super_R
+keycode 135 = Super_R
+
+add Control = Control_L Control_R
+add Mod1    = Alt_L Alt_R
+add Mod4    = Super_L Super_R
+add Mod5    = Hyper_L
+
+** Put new layout in a file.
+
+Restart your computer so the new layout can apply.  Then run the following
+
+xkbcomp $DISPLAY output.xkb
+
+to put the new layout into the file ~/output.xkb
+
+** Rename layout file and call from ~/.xinitrc
+
+mv ~/output.xkb ~/.Xkeymap
+
+and put the following into ~/.xinitrc
+
+test -f ~/.Xkeymap && xkbcomp ~/.Xkeymap $DISPLAY

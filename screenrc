@@ -1,0 +1,67 @@
+# .screenrc
+
+# use F1 as command key
+bindkey "^[[11~" command
+# same as above but recognized by xterm
+bindkey "^[OP" command
+
+# and change the default prefix key to something that conflicts less
+# with emacs key bindings
+escape ^^^^
+
+# disable some annoying keys
+bind H
+bind h
+bind ^k
+bind k
+bind x
+bind ^x
+bind .
+bind M
+bind q
+bind ^q
+bind _
+
+# color support
+term screen-256color
+
+# no startup message
+startup_message off
+
+# number of lines of screen history
+defscrollback 2000
+
+# make navigating between regions easier
+bind j focus down
+bind k focus up
+bind t focus top
+bind b focus bottom
+# there is no way to say "change to the window on the right side", the best we
+# can do is to change to another split window
+bind l focus
+bind h focus
+
+# resize windows
+bind m resize min
+bind M resize max
+bind = resize =
+bind + resize +5
+bind - resize -5
+
+# no line wrapping
+# defwrap off
+
+# make removing regions easier
+bind r remove
+
+# always display caption
+caption always
+
+# toggle fullscreen or not
+bind f eval "caption splitonly" #"hardstatus ignore"
+bind F eval "caption always"    #"hardstatus alwayslastline"
+
+# show all open windows by title in caption
+caption string "%2n %t"
+#hardstatus alwayslastline "%w%=%m-%d-%y --- %C:%s"
+#caption always "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %72=Load: %l %{wk}"

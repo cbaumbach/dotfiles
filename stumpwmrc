@@ -1,0 +1,13 @@
+;; -*-lisp-*-
+(in-package :stumpwm)
+
+(set-prefix-key (kbd "Hyper_R"))
+
+(run-shell-command "rm ~/.xsession-errors*")
+
+(define-key *root-map* (kbd "c") "exec xterm")
+(define-key *root-map* (kbd "C-c") "exec xterm")
+(define-key *root-map* (kbd "f") "exec firefox")
+(define-key *root-map* (kbd "v") "exec vlc")
+(define-key *root-map* (kbd "C-e") "exec emacs -daemon")
+(define-key *root-map* (kbd "e") "exec emacsclient -c")
