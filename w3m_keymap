@@ -1,0 +1,549 @@
+# A sample of ~/.w3m/keymap (default)
+#
+# Ctrl  : C-, ^
+# Escape: ESC-, M-, ^[
+# Space : SPC, ' '
+# Tab   : TAB, ^i, ^I
+# Delete: DEL, ^?
+# Up    : UP, ^[[A
+# Down  : DOWN, ^[[B
+# Right : RIGHT, ^[[C
+# Left  : LEFT, ^[[D
+
+#=====================================================================
+# PAGE/CURSOR MOTION
+#=====================================================================
+
+keymap C-v NEXT_PAGE
+keymap M-v PREV_PAGE
+keymap C-f MOVE_RIGHT
+keymap C-b MOVE_LEFT
+keymap C-n MOVE_DOWN
+keymap C-p MOVE_UP
+keymap k DOWN
+keymap j UP
+keymap < SHIFT_LEFT
+keymap > SHIFT_RIGHT
+keymap , LEFT
+keymap . RIGHT
+keymap C-a LINE_BEGIN
+keymap C-e LINE_END
+keymap Z CENTER_H
+keymap z CENTER_V
+keymap M-g GOTO_LINE
+keymap M-< BEGIN
+keymap M-> END
+keymap M-f NEXT_WORD
+keymap M-b PREV_WORD
+keymap TAB NEXT_LINK
+keymap M-TAB PREV_LINK
+keymap ( UNDO
+keymap ) REDO
+
+#=====================================================================
+# HYPERLINK OPERATION
+#=====================================================================
+
+keymap C-m GOTO_LINK
+keymap C-j GOTO_LINK
+keymap s SAVE_LINK
+keymap u PEEK
+keymap l PEEK_LINK
+keymap i PEEK_IMG
+keymap = INFO
+keymap L LINE_INFO
+keymap m LIST_MENU
+keymap C-t TAB_LINK
+
+#=====================================================================
+# ENTERING URLS
+#=====================================================================
+
+keymap g GOTO
+keymap G GOTO_RELATIVE
+keymap t TAB_GOTO
+keymap T TAB_GOTO_RELATIVE
+
+#=====================================================================
+# BUFFER OPERATION
+#=====================================================================
+
+keymap B PREV
+keymap F NEXT
+keymap b SELECT_MENU
+keymap v VIEW
+keymap S SAVE
+keymap p PRINT
+keymap e EDIT
+keymap r RELOAD
+keymap C-l REDRAW
+
+#=====================================================================
+# TAB OPERATION
+#=====================================================================
+
+keymap d NEW_TAB
+keymap C-k CLOSE_TAB
+keymap M-n NEXT_TAB
+keymap M-p PREV_TAB
+keymap "M-'" NEXT_TAB
+keymap c TAB_MENU
+
+#=====================================================================
+# BOOKMARK OPERATION
+#=====================================================================
+
+keymap M-b VIEW_BOOKMARK
+keymap M-a ADD_BOOKMARK
+
+#=====================================================================
+# SEARCH
+#=====================================================================
+
+keymap C-s ISEARCH
+keymap C-r ISEARCH_BACK
+
+#=====================================================================
+# MISCELLANEOUS
+#=====================================================================
+
+keymap C-h HELP
+keymap o OPTIONS
+keymap C COOKIE
+keymap h HISTORY
+keymap D DOWNLOAD_LIST
+keymap w WRAP_TOGGLE
+keymap M-x COMMAND
+keymap a ALARM
+keymap R REINIT
+keymap ! EXEC_SHELL
+keymap C-g INTERRUPT
+keymap C-c EXIT
+
+keymap C-x NOTHING
+keymap C-u NOTHING
+
+#=====================================================================
+# AVAILABLE FUNCTIONS
+#=====================================================================
+
+# | COMMANDS          | DESCRIPTION                                                  |
+# |-------------------+--------------------------------------------------------------|
+# | ABORT             | Quit w3m without confirmation                                |
+# | ACCESSSKEY        | Popup acceskey menu                                          |
+# | ADD_BOOKMARK      | Add current page to bookmark                                 |
+# | ALARM             | Set alarm                                                    |
+# | BACK              | Back to previous buffer                                      |
+# | BEGIN             | Go to the first line                                         |
+# | BOOKMARK          | Read bookmark                                                |
+# | CENTER_H          | Move to the center line                                      |
+# | CENTER_V          | Move to the center column                                    |
+# | CHARSET           | Change the current document charset                          |
+# | CLOSE_TAB         | Close current tab                                            |
+# | CLOSE_TAB_MOUSE   | Close tab on mouse cursor (for mouse action)                 |
+# | COMMAND           | Execute w3m command(s)                                       |
+# | COOKIE            | View cookie list                                             |
+# | DEFAULT_CHARSET   | Change the default document charset                          |
+# | DEFINE_KEY        | Define a binding between a key stroke and a user command     |
+# | DELETE_PREVBUF    | Delete previous buffer (mainly for local-CGI)                |
+# | DICT_WORD         | Execute dictionary command (see README.dict)                 |
+# | DICT_WORD_AT      | Execute dictionary command for word at cursor                |
+# | DISPLAY_IMAGE     | Restart loading and drawing of images                        |
+# | DOWN              | Scroll down one line                                         |
+# | DOWNLOAD          | Save document source to file                                 |
+# | DOWNLOAD_LIST     | Display download list panel                                  |
+# | EDIT              | Edit current document                                        |
+# | EDIT_SCREEN       | Edit currently rendered document                             |
+# | END               | Go to the last line                                          |
+# | EXEC_SHELL        | Execute shell command                                        |
+# | EXIT              | Quit w3m without confirmation                                |
+# | EXTERN            | Execute external browser                                     |
+# | EXTERN_LINK       | View current link using external browser                     |
+# | FRAME             | Render frame                                                 |
+# | GOTO              | Go to URL                                                    |
+# | GOTO_LINE         | Go to specified line                                         |
+# | GOTO_LINK         | Go to current link                                           |
+# | GOTO_RELATIVE     | Go to relative URL                                           |
+# | HELP              | View help                                                    |
+# | HISTORY           | View history of URL                                          |
+# | INFO              | View info of current document                                |
+# | INTERRUPT         | Stop loading document                                        |
+# | INIT_MAILCAP      | Reread mailcap (mainly for local-CGI)                        |
+# | ISEARCH           | Incremental search forward                                   |
+# | ISEARCH_BACK      | Incremental search backward                                  |
+# | LEFT              | Shift screen one column                                      |
+# | LINE_BEGIN        | Go to the beginning of line                                  |
+# | LINE_END          | Go to the end of line                                        |
+# | LINE_INFO         | Show current line number                                     |
+# | LINK_BEGIN        | Go to the first link                                         |
+# | LINK_END          | Go to the last link                                          |
+# | LINK_MENU         | Popup link element menu                                      |
+# | LIST              | Show all links and images                                    |
+# | LIST_MENU         | Popup link list menu and go to selected link                 |
+# | LOAD              | Load local file                                              |
+# | MAIN_MENU         | Popup menu                                                   |
+# | MARK              | Set/unset mark                                               |
+# | MARK_MID          | Mark Message-ID-like strings as anchors                      |
+# | MARK_URL          | Mark URL-like strings as anchors                             |
+# | MARK_WORD         | Mark current word as anchor                                  |
+# | MENU              | Popup menu                                                   |
+# | MENU_MOUSE        | Popup menu at mouse cursor (for mouse action)                |
+# | MOUSE_TOGGLE      | Toggle activity of mouse                                     |
+# | MOVE_DOWN         | Move cursor down (a half screen scroll at the end of screen) |
+# | MOVE_DOWN1        | Move cursor down (1 line scroll at the end of screen)        |
+# | MOVE_LEFT         | Move cursor left (a half screen shift at the left edge)      |
+# | MOVE_LEFT1        | Move cursor left (1 columns shift at the left edge)          |
+# | MOVE_LIST_MENU    | Popup link list menu and move cursor to selected link        |
+# | MOVE_MOUSE        | Move cursor to mouse cursor (for mouse action)               |
+# | MOVE_RIGHT        | Move cursor right (a half screen shift at the right edge)    |
+# | MOVE_RIGHT1       | Move cursor right (1 columns shift at the right edge)        |
+# | MOVE_UP           | Move cursor up (a half screen scroll at the top of screen)   |
+# | MOVE_UP1          | Move cursor up (1 line scrol at the top of screen)           |
+# | MSGS              | Display error messages                                       |
+# | NEW_TAB           | Open new tab                                                 |
+# | NEXT              | Move to next buffer                                          |
+# | NEXT_DOWN         | Move to next downward link                                   |
+# | NEXT_LEFT         | Move to next left link                                       |
+# | NEXT_LEFT_UP      | Move to next left (or upward) link                           |
+# | NEXT_LINK         | Move to next link                                            |
+# | NEXT_MARK         | Move to next word                                            |
+# | NEXT_PAGE         | Move to next page                                            |
+# | NEXT_RIGHT        | Move to next right link                                      |
+# | NEXT_RIGHT_DOWN   | Move to next right (or downward) link                        |
+# | NEXT_TAB          | Move to next tab                                             |
+# | NEXT_UP           | Move to next upward link                                     |
+# | NEXT_VISITED      | Move to next visited link                                    |
+# | NEXT_WORD         | Move to next word                                            |
+# | NOTHING           | Do nothing                                                   |
+# | NULL              | Do nothing                                                   |
+# | OPTIONS           | Option setting panel                                         |
+# | PEEK              | Peek current URL                                             |
+# | PEEK_IMG          | Peek image URL                                               |
+# | PEEK_LINK         | Peek link URL                                                |
+# | PIPE_BUF          | Send rendered document to pipe                               |
+# | PIPE_SHELL        | Execute shell command and browse                             |
+# | PREV              | Move to previous buffer                                      |
+# | PREV_LINK         | Move to previous link                                        |
+# | PREV_MARK         | Move to previous mark                                        |
+# | PREV_PAGE         | Move to previous page                                        |
+# | PREV_TAB          | Move to previous tab                                         |
+# | PREV_VISITED      | Move to previous visited link                                |
+# | PREV_WORD         | Move to previous word                                        |
+# | PRINT             | Save buffer to file                                          |
+# | QUIT              | Quit w3m                                                     |
+# | READ_SHELL        | Execute shell command and load                               |
+# | REDO              | Cancel the last undo                                         |
+# | REDRAW            | Redraw screen                                                |
+# | REG_MARK          | Set mark using regexp                                        |
+# | REINIT            | Reload configuration files                                   |
+# | RELOAD            | Reload buffer                                                |
+# | RESHAPE           | Re-render buffer                                             |
+# | RIGHT             | Shift screen one column right                                |
+# | SAVE              | Save document source to file                                 |
+# | SAVE_IMAGE        | Save image to file                                           |
+# | SAVE_LINK         | Save link to file                                            |
+# | SAVE_SCREEN       | Save rendered document to file                               |
+# | SEARCH            | Search forward                                               |
+# | SEARCH_BACK       | Search backward                                              |
+# | SEARCH_FORE       | Search forward                                               |
+# | SEARCH_NEXT       | Search next regexp                                           |
+# | SEARCH_PREV       | Search previous regexp                                       |
+# | SELECT            | Go to buffer selection panel                                 |
+# | SELECT_MENU       | Popup buffer selection menu                                  |
+# | SETENV            | Set environment variable                                     |
+# | SET_OPTION        | Set option                                                   |
+# | SHELL             | Execute shell command                                        |
+# | SHIFT_LEFT        | Shift screen left                                            |
+# | SHIFT_RIGHT       | Shift screen right                                           |
+# | SOURCE            | View HTML source                                             |
+# | STOP_IMAGE        | Stop loading and drawing of images                           |
+# | SUBMIT            | Submit form                                                  |
+# | SUSPEND           | Stop loading document                                        |
+# | TAB_GOTO          | Open URL on new tab                                          |
+# | TAB_GOTO_RELATIVE | Open relative URL on new tab                                 |
+# | TAB_LEFT          | Move current tab left                                        |
+# | TAB_LINK          | Open current link on new tab                                 |
+# | TAB_MENU          | Popup tab selection menu                                     |
+# | TAB_MOUSE         | Move to tab on mouse cursor (for mouse action)               |
+# | TAB_RIGHT         | Move current tab right                                       |
+# | UNDO              | Cancel the last cursor movement                              |
+# | UP                | Scroll up one line                                           |
+# | VERSION           | Display version of w3m                                       |
+# | VIEW              | View HTML source                                             |
+# | VIEW_BOOKMARK     | View bookmark                                                |
+# | VIEW_IMAGE        | View image                                                   |
+# | WHEREIS           | Search forward                                               |
+# | WRAP_TOGGLE       | Toggle wrap search mode                                      |
+
+#=====================================================================
+# DEFAULT KEYMAP
+#=====================================================================
+#
+# keymap C-@ MARK
+# keymap C-a LINE_BEGIN
+# keymap C-b MOVE_LEFT
+# keymap C-e LINE_END
+# keymap C-f MOVE_RIGHT
+# keymap C-g LINE_INFO
+# keymap C-h HISTORY
+# keymap TAB NEXT_LINK
+# keymap C-j GOTO_LINK
+# keymap C-k COOKIE
+# keymap C-l REDRAW
+# keymap C-m GOTO_LINK
+# keymap C-n MOVE_DOWN
+# keymap C-p MOVE_UP
+# keymap C-q CLOSE_TAB
+# keymap C-r ISEARCH_BACK
+# keymap C-s ISEARCH
+# keymap C-t TAB_LINK
+# keymap C-u PREV_LINK
+# keymap C-v NEXT_PAGE
+# keymap C-w WRAP_TOGGLE
+# keymap C-z SUSPEND
+#
+# keymap SPC NEXT_PAGE
+# keymap ! SHELL
+# keymap \" REG_MARK
+# keymap # PIPE_SHELL
+# keymap $ LINE_END
+# keymap ( UNDO
+# keymap ) REDO
+# keymap + NEXT_PAGE
+# keymap , LEFT
+# keymap - PREV_PAGE
+# keymap . RIGHT
+# keymap / SEARCH
+# keymap : MARK_URL
+# keymap ";" MARK_WORD
+# keymap < SHIFT_LEFT
+# keymap = INFO
+# keymap > SHIFT_RIGHT
+# keymap ? SEARCH_BACK
+# keymap @ READ_SHELL
+# keymap B BACK
+# keymap D DOWNLOAD_LIST
+# keymap E EDIT
+# keymap F FRAME
+# keymap G END
+# keymap H HELP
+# keymap I VIEW_IMAGE
+# keymap J UP
+# keymap K DOWN
+# keymap L LIST
+# keymap M EXTERN
+# keymap N SEARCH_PREV
+# keymap Q EXIT
+# keymap R RELOAD
+# keymap S SAVE_SCREEN
+# keymap T NEW_TAB
+# keymap U GOTO
+# keymap V LOAD
+# keymap W PREV_WORD
+# keymap Z CENTER_H
+# keymap [ LINK_BEGIN
+# keymap ] LINK_END
+# keymap \^ LINE_BEGIN
+# keymap a SAVE_LINK
+# keymap b PREV_PAGE
+# keymap c PEEK
+# keymap g BEGIN
+# keymap h MOVE_LEFT
+# keymap i PEEK_IMG
+# keymap j MOVE_DOWN
+# keymap k MOVE_UP
+# keymap l MOVE_RIGHT
+# keymap m MOUSE_TOGGLE
+# keymap n SEARCH_NEXT
+# keymap o OPTIONS
+# keymap q QUIT
+# keymap r VERSION
+# keymap s SELECT_MENU
+# keymap u PEEK_LINK
+# keymap v VIEW
+# keymap w NEXT_WORD
+# keymap z CENTER_V
+# keymap { PREV_TAB
+# keymap | PIPE_BUF
+# keymap } NEXT_TAB
+#
+# keymap M-TAB PREV_LINK
+# keymap M-C-j SAVE_LINK
+# keymap M-C-m SAVE_LINK
+#
+# keymap M-: MARK_MID
+# keymap M-< BEGIN
+# keymap M-> END
+# keymap M-I SAVE_IMAGE
+# keymap M-M EXTERN_LINK
+# keymap M-W DICT_WORD_AT
+# keymap M-a ADD_BOOKMARK
+# keymap M-b BOOKMARK
+# keymap M-c COMMAND
+# keymap M-e EDIT_SCREEN
+# keymap M-g GOTO_LINE
+# keymap M-k DEFINE_KEY
+# keymap M-l LIST_MENU
+# keymap M-m MOVE_LIST_MENU
+# keymap M-n NEXT_MARK
+# keymap M-o SET_OPTION
+# keymap M-p PREV_MARK
+# keymap M-s SAVE
+# keymap M-t TAB_MENU
+# keymap M-u GOTO_RELATIVE
+# keymap M-v PREV_PAGE
+# keymap M-w DICT_WORD
+#
+# keymap UP MOVE_UP
+# keymap DOWN MOVE_DOWN
+# keymap RIGHT MOVE_RIGHT
+# keymap LEFT MOVE_LEFT
+#
+# keymap M-[E MENU
+# keymap M-[L MENU
+# keymap M-[Z PREV_LINK
+#
+# keymap M-[1~ BEGIN
+# keymap M-[2~ MENU
+# keymap M-[4~ END
+# keymap M-[5~ PREV_PAGE
+# keymap M-[6~ NEXT_PAGE
+# keymap M-[28~ MENU
+
+#=====================================================================
+# LYNX KEYMAP
+#=====================================================================
+#
+# keymap C-@ MARK
+# keymap C-a BEGIN
+# keymap C-b BACK
+# keymap C-e END
+# keymap C-f GOTO_LINK
+# keymap C-g LINE_INFO
+# keymap C-h HISTORY
+# keymap TAB NEXT_LINK
+# keymap C-j GOTO_LINK
+# keymap C-k COOKIE
+# keymap C-l REDRAW
+# keymap C-m GOTO_LINK
+# keymap C-n NEXT_LINK
+# keymap C-p PREV_LINK
+# keymap C-q CLOSE_TAB
+# keymap C-r RELOAD
+# keymap C-s SEARCH
+# keymap C-t TAB_LINK
+# keymap C-u PREV_LINK
+# keymap C-v NEXT_PAGE
+# keymap C-w REDRAW
+# keymap C-z SUSPEND
+#
+# keymap SPC NEXT_PAGE
+# keymap ! SHELL
+# keymap \" REG_MARK
+# keymap # PIPE_SHELL
+# keymap $ LINE_END
+# keymap ( UNDO
+# keymap ) REDO
+# keymap + NEXT_PAGE
+# keymap , LEFT
+# keymap - PREV_PAGE
+# keymap . RIGHT
+# keymap / SEARCH
+# keymap : MARK_URL
+# keymap ; MARK_WORD
+# keymap < SHIFT_LEFT
+# keymap = INFO
+# keymap > SHIFT_RIGHT
+# keymap ? HELP
+# keymap @ READ_SHELL
+# keymap B BACK
+# keymap D DOWNLOAD_LIST
+# keymap E EDIT
+# keymap F FRAME
+# keymap G GOTO_LINE
+# keymap H HELP
+# keymap I VIEW_IMAGE
+# keymap J UP
+# keymap K DOWN
+# keymap L LIST
+# keymap M EXTERN
+# keymap N NEXT_MARK
+# keymap P PREV_MARK
+# keymap Q EXIT
+# keymap R RELOAD
+# keymap S SAVE_SCREEN
+# keymap T NEW_TAB
+# keymap U GOTO
+# keymap V LOAD
+# keymap W PREV_WORD
+# keymap Z CENTER_H
+# keymap [ LINK_BEGIN
+# keymap \\ SOURCE
+# keymap ] LINK_END
+# keymap \^ LINE_BEGIN
+# keymap a ADD_BOOKMARK
+# keymap b PREV_PAGE
+# keymap c PEEK
+# keymap d SAVE_LINK
+# keymap g GOTO
+# keymap h MOVE_LEFT
+# keymap i PEEK_IMG
+# keymap j MOVE_DOWN
+# keymap k MOVE_UP
+# keymap l MOVE_RIGHT
+# keymap m MOUSE_TOGGLE
+# keymap n SEARCH_NEXT
+# keymap o OPTIONS
+# keymap p SAVE_SCREEN
+# keymap q QUIT
+# keymap r VERSION
+# keymap s SELECT_MENU
+# keymap u PEEK_LINK
+# keymap v BOOKMARK
+# keymap w NEXT_WORD
+# keymap z CENTER_V
+# keymap { PREV_TAB
+# keymap | PIPE_BUF
+# keymap } NEXT_TAB
+#
+# keymap M-TAB PREV_LINK
+# keymap M-C-j SAVE_LINK
+# keymap M-C-m SAVE_LINK
+#
+# keymap M-: MARK_MID
+# keymap M-< BEGIN
+# keymap M-> END
+# keymap M-I SAVE_IMAGE
+# keymap M-M EXTERN_LINK
+# keymap M-W DICT_WORD_AT
+# keymap M-a ADD_BOOKMARK
+# keymap M-b BOOKMARK
+# keymap M-c COMMAND
+# keymap M-e EDIT_SCREEN
+# keymap M-g GOTO_LINE
+# keymap M-k DEFINE_KEY
+# keymap M-l LIST_MENU
+# keymap M-m MOVE_LIST_MENU
+# keymap M-n NEXT_MARK
+# keymap M-o SET_OPTION
+# keymap M-p PREV_MARK
+# keymap M-s SAVE
+# keymap M-t TAB_MENU
+# keymap M-u GOTO_RELATIVE
+# keymap M-v PREV_PAGE
+# keymap M-w DICT_WORD
+#
+# keymap UP PREV_LINK
+# keymap DOWN NEXT_LINK
+# keymap RIGHT GOTO_LINK
+# keymap LEFT BACK
+#
+# keymap M-[E MENU
+# keymap M-[L MENU
+#
+# keymap M-[1~ BEGIN
+# keymap M-[2~ MENU
+# keymap M-[4~ END
+# keymap M-[5~ PREV_PAGE
+# keymap M-[6~ NEXT_PAGE
+# keymap M-[28~ MENU
