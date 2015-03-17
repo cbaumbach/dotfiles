@@ -117,8 +117,10 @@ keymap M-x COMMAND
 keymap a ALARM
 keymap R REINIT
 keymap ! EXEC_SHELL
-keymap C-g INTERRUPT
 keymap C-c EXIT
+
+# Disable interrupt since this can cause w3m to hang.
+keymap C-z NOTHING
 
 keymap C-x NOTHING
 keymap C-u NOTHING
