@@ -13,3 +13,4 @@ Create symlinks:
     ln -s ~/dotfiles/Xresources   ~/.Xdefaults
     ln -s ~/dotfiles/stumpwmrc    ~/.stumpwmrc
     ln -s ~/dotfiles/w3m_keymap   ~/.w3m/keymap
+    ln -s ~/dotfiles/feh_keys     ~/.config/feh/keys

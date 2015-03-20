@@ -1,0 +1,53 @@
+# feh_keys
+#
+# An example key configuration file can be found at
+# /usr/share/doc/feh/examples/keys.
+#
+# Comments start with a # sign, do not use them mid-line.
+# Each line must be blank, a comment, or a key definition.
+#
+# key definition: <action name> <key1> [<key2> [<key3>]]
+#
+# Each <key> is an X11 keysym (as output by xev) with optional
+# modifier.  For instance, C-x would be Ctrl+X, or 4-space Mod4+Space.
+# A list of X11 keysyms can be found in /usr/include/X11/keysymdef.h.
+# You only have to drop the "XK_" prefixes.
+#
+# If you want to unbind certain commands, mention the command by
+# itself without binding a key to it.
+
+# Menu bindings
+menu_parent h Left
+menu_child  l Right
+menu_down   j Down
+menu_up     k Up
+menu_select space Return
+
+# Image navigation
+next_img space Right
+prev_img BackSpace Left
+
+# Image movement
+scroll_up    C-p
+scroll_down  C-n
+scroll_left  C-b
+scroll_right C-f
+
+# Drop file from list of displayed files
+remove d
+
+# Permanently delete file
+delete Delete
+
+# Remove now conflicts with toggle_filenames, so change that
+toggle_filenames F
+
+# Zooming
+zoom_in      C-plus
+zoom_out     C-minus
+zoom_default C-equal
+zoom_fit     f
+
+# I only hit these accidentaly
+save_image
+save_filelist
