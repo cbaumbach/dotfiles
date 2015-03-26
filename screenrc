@@ -5,9 +5,17 @@ bindkey "^[[11~" command
 # same as above but recognized by xterm
 bindkey "^[OP" command
 
-# and change the default prefix key to something that conflicts less
-# with emacs key bindings
+# and change the default prefix key to C-^
 escape ^^^^
+
+# use emacs-style movement
+#
+# normally you can't use meta key combinitions.  here is a hack that
+# binds M-v ("v") to  via the S register.  later we can remap 
+# to M-x (indirectly via ).
+register S 
+bindkey -m "v" process S
+markkeys =:=:h=:l=:j=:k=:$=:@=
 
 # disable some annoying keys
 bind H
