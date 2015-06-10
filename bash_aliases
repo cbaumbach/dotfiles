@@ -5,7 +5,7 @@ alias l='ls -CF -1 --color=auto --group-directories-first'
 alias grep='grep   --color=auto'
 
 alias g++='g++ -Wall -Wextra'
-alias gcc='g++ -Wall -Wextra'
+alias gcc='gcc -Wall -Wextra'
 alias duu='du --max-depth=1 -h'
 alias emacs='emacs --no-site-file'
 alias e=emacsclient
