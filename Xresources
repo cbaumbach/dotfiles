@@ -18,8 +18,11 @@ xterm*utf8: 1
 
 ! If we want more space between lines, we can select the following
 ! font instead of the 9x15 X window font.
-xterm*font:     -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
-xterm*boldFont: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+! xterm*font:     -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+! xterm*boldFont: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+! Use a slightly bigger version.
+xterm*font:     -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+xterm*boldFont: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
 ! The following is the long spec for the 9x15 font and can be found at
 ! http://en.wikipedia.org/wiki/Fixed_(typeface).
 ! xterm*font:     -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
