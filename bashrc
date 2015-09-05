@@ -3,6 +3,9 @@
 # If not running interactively, don't do anything.
 [ -z "$PS1" ] && return
 
+# Use a colorful terminal.
+[ -z "$TMUX" ]  &&  export TERM=xterm-256color
+
 # Load alias definitions.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
