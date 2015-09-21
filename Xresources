@@ -4,6 +4,9 @@ xterm*foreground: white
 xterm*HiForeColor: white
 xterm*HiBackColor: black
 xterm*cursorColor: white
+xterm*cursorBlink: true
+xterm*cursorOffTime: 500
+xterm*cursorOnTime: 500
 xterm*scrollBar: false
 xterm*boldMode: false
 xterm*allowBoldFonts: false
