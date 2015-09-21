@@ -14,45 +14,8 @@ xterm*colorBDMode: true
 xterm*colorBD: gray
 xterm*geometry: 79x75
 xterm*utf8: 1
-
-! Using the same font for normal and bold font ensures that we will
-! not have any bold font in the terminal.
-! xterm*font:     9x15
-! xterm*boldFont: 9x15
-
-! If we want more space between lines, we can select the following
-! font instead of the 9x15 X window font.
-! xterm*font:     -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
-! xterm*boldFont: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
-! Use a slightly bigger version.
-xterm*font:     -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
-xterm*boldFont: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
-! The following is the long spec for the 9x15 font and can be found at
-! http://en.wikipedia.org/wiki/Fixed_(typeface).
-! xterm*font:     -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
-
-!          9x15      9x18 (?)
-! fndry    misc      misc
-! fmly     fixed     fixed
-! wght     medium    medium
-! slant    r         r
-! sWdth    normal    normal
-! adstyl
-! pxlsz    15        18
-! ptSz     140       120
-! resx     75        100
-! resy     75        100
-! spc      c         c
-! avgWdth  90        90
-! rgstry   iso10646  iso10646
-! encdng   1         1
-
-! Here is another nice utf8 compatible bitmap font.
-! xterm*font: -gnu-unifont-medium-r-normal--16-160-75-75-c-80-iso10646-1
-
-! To get a listing of all utf8 fonts on the system, type:
-! xlsfonts | grep iso10646-1
-
+xterm*faceName: Bitstream Vera Sans Mono
+xterm*faceSize: 11
 xterm*eightBitInput: false
 xterm*altIsNotMeta: true
 xterm*metaSendsEscape: true
