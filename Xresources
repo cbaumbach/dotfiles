@@ -53,8 +53,3 @@ xterm*eightBitInput: false
 xterm*altIsNotMeta: true
 xterm*metaSendsEscape: true
 xterm*altSendsEscape: true
-
-
-! emacs ---------------------------------------------------------------
-emacs*foreground: DarkSeaGreen2
-emacs*background: black
