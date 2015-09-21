@@ -1,13 +1,14 @@
 ! xterm --------------------------------------------------------------
 xterm*background: black
-xterm*foreground: DarkSeaGreen2
+xterm*foreground: white
 xterm*HiForeColor: white
 xterm*HiBackColor: black
+xterm*cursorColor: white
 xterm*scrollBar: false
 xterm*boldMode: false
 xterm*allowBoldFonts: false
 xterm*colorBDMode: true
-xterm*colorBD: green
+xterm*colorBD: gray
 xterm*geometry: 79x75
 xterm*utf8: 1
 
