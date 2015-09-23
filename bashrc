@@ -18,7 +18,7 @@ PS1="$ "
 set -o emacs
 
 # Use emacsclient as default editor.
-EDITOR='emacsclient -a ""'; export EDITOR
+# EDITOR='emacsclient -a ""'; export EDITOR
 
 # Stop putty from doing XOFF/XON with C-s/C-q.
 stty -ixon
