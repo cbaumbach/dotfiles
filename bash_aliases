@@ -3,6 +3,7 @@ alias ll='ls -l    --color=auto --group-directories-first'
 alias la='ls -A    --color=auto --group-directories-first'
 alias l='ls -CF -1 --color=auto --group-directories-first'
 alias grep='grep   --color=auto'
+alias less='less --chop-long-lines'
 
 alias g++='g++ -Wall -Wextra'
 alias gcc='gcc -Wall -Wextra'
