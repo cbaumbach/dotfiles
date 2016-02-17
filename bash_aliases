@@ -11,3 +11,5 @@ alias duu='du --max-depth=1 -h'
 alias emacs='emacs --no-site-file'
 alias e=emacsclient
 alias R='R --quiet'
+alias vi='vim'
+alias view='vim -R'
