@@ -1,0 +1,12 @@
+[user]
+	name = Clemens Baumbach
+	email = clemens.baumbach@gmx.net
+[alias]
+	show-graph = log --graph --abbrev-commit --pretty=oneline --all
+[core]
+	pager = cat
+	editor = vim
+[branch]
+	autosetuprebase = always
+[push]
+	default = tracking
