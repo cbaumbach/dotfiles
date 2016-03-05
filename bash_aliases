@@ -3,7 +3,7 @@ alias la='ls -A'
 alias l='ls -p'
 alias grep='grep --color=auto'
 alias less='less --chop-long-lines'
-alias emacs='emacs --no-site-file'
+alias emacs='emacs --no-window-system --no-site-file'
 alias e=emacsclient
 alias R='R --quiet --no-save'
 alias vi='vim'
