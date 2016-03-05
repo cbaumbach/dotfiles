@@ -1,5 +1,6 @@
 alias ll='ls -l'
 alias la='ls -A'
+alias l='ls -p'
 alias grep='grep --color=auto'
 alias less='less --chop-long-lines'
 alias emacs='emacs --no-site-file'
