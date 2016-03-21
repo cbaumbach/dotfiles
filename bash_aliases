@@ -5,6 +5,6 @@ alias grep='grep --color=auto'
 alias less='less --chop-long-lines'
 alias emacs='emacs --no-window-system --no-site-file'
 alias e=emacsclient
-alias R='R --quiet --no-save'
+alias R='R --quiet --no-save --no-restore'
 alias vi='vim'
 alias view='vim -R'
