@@ -14,8 +14,8 @@ xterm*colorBDMode: true
 xterm*colorBD: gray
 xterm*geometry: 79x75
 xterm*utf8: 1
-xterm*faceName: NK57 Monospace Cd Sb
-xterm*faceSize: 12
+xterm*faceName: Inconsolata
+xterm*faceSize: 16
 xterm*eightBitInput: false
 xterm*altIsNotMeta: true
 xterm*metaSendsEscape: true
