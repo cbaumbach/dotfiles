@@ -2,7 +2,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -p'
 alias grep='grep --color=auto'
-alias less='less --chop-long-lines'
+alias less='less --chop-long-lines --ignore-case'
 alias emacs='emacs --no-window-system --no-site-file'
 alias e=emacsclient
 alias R='R --quiet --no-save --no-restore'
