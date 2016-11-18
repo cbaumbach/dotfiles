@@ -14,8 +14,8 @@ xterm*colorBDMode: true
 xterm*colorBD: gray
 xterm*geometry: 79x75
 xterm*utf8: 1
-xterm*font:     8x13
-xterm*boldFont: 8x13
+xterm*font:     6x13
+xterm*boldFont: 6x13
 xterm*eightBitInput: false
 xterm*altIsNotMeta: true
 xterm*metaSendsEscape: true
