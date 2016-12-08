@@ -1,0 +1,12 @@
+[user]
+    name = Clemens Baumbach
+    email = clemens.baumbach@gmx.net
+[core]
+    autocrlf = true
+[credential]
+    helper = wincred
+    useHttpPath = true
+[branch]
+    autosetuprebase = always
+[push]
+    default = tracking
