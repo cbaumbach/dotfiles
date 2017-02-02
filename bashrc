@@ -27,3 +27,7 @@ stty -ixon
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+
+# Use vi as the default editor.
+VISUAL=vi
+EDITOR=$VISUAL
