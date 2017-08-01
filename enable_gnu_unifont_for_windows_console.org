@@ -1,0 +1,33 @@
+* How to enable GNU Unifont for Windows Console
+- Download the unifont true type font file from
+  unifoundry.com/unifont.html
+- Install unifont by double-clicking on the ttf file and selecting
+  "install"
+- Install fontforge
+- Open c:\Windows\Fonts\unifont.ttf in fontforge
+- Go to Element -> Font Info...
+- Under PS Names change Fontname, Family Name, and Name for Humans to
+  "UnifontMono"
+- Under OS/2 -> Panose change Proportion to "Monospaced"
+- Click OK and select Change when the popup offers to generate a
+  unique UID
+- Go to File -> Generate Fonts...
+- Select TrueType, No Bitmap Fonts, disable Validate Before Saving,
+  and click OK
+- This creates the file c:\Windows\Fonts\UnifontMono.ttf but won't
+  install the font.  We have to double-click on the file first.
+  Unfortunately we don't see the file in the file explorer since the
+  Fonts directory seems to show only installed Fonts.  Open cmd.exe as
+  admin by typing Windows key + X and selecting cmd.exe (admin).  Then
+  type
+
+    move c:\Windows\Fonts\UnifontMono.ttf c:\Users\cb\UnifontMono.ttf
+
+  Double-click on the file to install it.
+- Open the registry by typing Windows key + R and typing regedit.
+  Navigate to HKEY_LOCAL_MACHINE -> SOFTWARE -> Microsoft -> Windows
+  NT -> CurrentVersion -> Console -> TrueTypeFont.  Right-click in the
+  right pane and select New -> String Value and give it the name 000.
+  Right-click the new entry and select Modify.  Change the value to
+  "UnifontMono".
+- Now UnifontMono can be selected as the font for the windows console.
