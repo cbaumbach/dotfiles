@@ -2,6 +2,10 @@
 
 ! Remap some keys.
 
+! In Ubuntu 16.04, to have the remapping automatically applied when
+! X11 starts open "Startup Applications" in the Dash and add a new
+! entry that runs the command "xmodmap <absolute path to .Xmodmap>".
+
 clear Control
 clear Mod1
 clear Mod4
