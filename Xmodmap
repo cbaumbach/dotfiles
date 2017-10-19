@@ -2,9 +2,13 @@
 
 ! Remap some keys.
 
-! In Ubuntu 16.04, to have the remapping automatically applied when
-! X11 starts open "Startup Applications" in the Dash and add a new
-! entry that runs the command "xmodmap <absolute path to .Xmodmap>".
+! In Kubuntu 16.04, to have the remapping automatically applied on
+! startup go to Applications, Settings, System Settings, Startup and
+! Shutdown, Add Script, and enter the path to a shell script with the
+! following content.
+!
+! #!/bin/bash
+! /usr/bin/xmodmap $HOME/.dotfiles/Xmodmap
 
 clear Control
 clear Mod1
