@@ -12,7 +12,7 @@ xterm*boldMode: false
 xterm*allowBoldFonts: false
 xterm*colorBDMode: true
 xterm*colorBD: gray
-xterm*geometry: 79x75
+xterm*geometry: 75x50
 xterm*utf8: 1
 xterm*font:     -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
 xterm*boldFont: -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
