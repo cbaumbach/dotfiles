@@ -1,0 +1,55 @@
+! Make TypeMatrix layout more symmetric
+!
+! Ideally, we would remap the keys left and right of the spacebar to
+! control, meta, super, and hyper.  Unfortunately, the keys right next
+! to the spacebar cannot be remapped because they emit two different
+! keycodes, one of which conflicts with another unrelated but
+! essential key (AD00 and AC03).
+
+clear Shift
+clear Control
+clear Mod1
+clear Mod4
+clear Mod5
+
+! app
+keycode 135 = Control_L
+
+! home
+keycode 110 = Control_R
+
+! play
+keycode 172 = Alt_L
+
+! up
+keycode 111 = Alt_R
+
+! left control
+keycode 37 = Super_L
+
+! end
+keycode 115 = Super_R
+
+! left alt
+keycode 64 = Hyper_L
+
+! right alt
+keycode 108 = Hyper_R
+
+! backslash
+keycode 51 = Shift_R
+
+! mail
+keycode 163 = backslash bar
+
+! right shift
+keycode 62 = Return
+
+! right control
+keycode 105 = Up
+
+add Shift   = Shift_L Shift_R
+add Control = Control_L Control_R
+add Mod1    = Alt_L Alt_R
+add Mod4    = Super_L Super_R
+add Mod5    = Hyper_L Hyper_R
