@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+; Use https://github.com/randyrants/sharpkeys to find scancodes.
+;
+; Scancodes have to spelled in reverse: "12 34" becomes "34,12,".
+;
+; (L)eft (R)ight (S)hift (C)ontrol (A)lt (W)indows
+; X = Application   BS = Backspace
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,07,00,00,00,38,e0,5d,e0,1d,00,38,00,5b,e0,1d,00,38,00,5b,e0,1d,e0,38,e0,5c,e0,1d,e0,00,00,00,00
+;                 | version   | flags     | # entries | RA <- App | LC <-- LA | LW <-- LC | LA <-- LW | RC <-- RA | RW <-- RC | null entry
