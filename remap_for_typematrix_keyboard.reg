@@ -8,5 +8,5 @@ Windows Registry Editor Version 5.00
 ; X = Application   BS = Backspace
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
-"Scancode Map"=hex:00,00,00,00,00,00,00,00,0c,00,00,00,5c,e0,48,e0,0e,00,7d,00,38,00,5d,e0,5d,e0,4f,e0,38,e0,47,e0,5d,e0,1d,00,48,e0,1d,e0,1c,00,36,00,36,00,73,00,1d,e0,79,00,1d,00,7b,00,00,00,00,00
-;                 | version   | flags     | # entries | RW <-- Up | BS <- yen | LA <- App |App <- End | RA <-Home | App <- LC | Up <-- RC | RET <- RS | RS <-- ?? | RC <-dsktp|LC<-shuffle| null entry
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,0c,00,00,00,5c,e0,48,e0,0e,00,7d,00,38,00,5d,e0,5d,e0,4f,e0,38,00,47,e0,5d,e0,1d,00,48,e0,1d,e0,1c,00,36,00,36,00,73,00,1d,e0,79,00,1d,00,7b,00,00,00,00,00
+;                 | version   | flags     | # entries | RW <-- Up | BS <- yen | LA <- App |App <- End | LA <-Home | App <- LC | Up <-- RC | RET <- RS | RS <-- ?? | RC <-dsktp|LC<-shuffle| null entry
