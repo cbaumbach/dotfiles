@@ -1,9 +1,0 @@
-<!-- private.xml file for Karabiner; located in ~/Library/Application Support/Karabiner/ -->
-<?xml version="1.0"?>
-<root>
-  <item>
-    <name>Change CURSOR_LEFT to OPTION_R</name>
-    <identifier>private.cursor_left_to_option_r</identifier>
-    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, KeyCode::OPTION_R</autogen>
-  </item>
-</root>
