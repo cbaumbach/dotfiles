@@ -4,8 +4,7 @@ Windows Registry Editor Version 5.00
 ;
 ; Scancodes have to spelled in reverse: "12 34" becomes "34,12,".
 ;
-; (L)eft (R)ight (S)hift (C)ontrol (A)lt (W)indows
-; X = Application   BS = Backspace
+; (L)eft (R)ight (S)hift (C)ontrol (A)lt (W)indows (App)lication
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
 "Scancode Map"=hex:00,00,00,00,00,00,00,00,07,00,00,00,38,00,5d,e0,1d,00,38,00,5b,e0,1d,00,38,00,5b,e0,1d,e0,38,e0,5c,e0,1d,e0,00,00,00,00
