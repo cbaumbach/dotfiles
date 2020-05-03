@@ -1,5 +1,6 @@
 set autoindent
 set cedit=
+set exrc
 set extended
 set filec=
 set iclower
