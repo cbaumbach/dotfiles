@@ -25,7 +25,7 @@ map gt m_:%s/	/    /g`_
 map gk m_:g/[ 	]+$/s///Go:?[^ 	]?+1,.d`_
 
 " Commenting
-:map!  #
-:map g= :unmap! :map!  
-:map gc m_'m0i "_yws:'m,'_s/^/"_Pxhf/a& / "_d0x:@_
-:map gu :'m,.s/ //
+map!  #
+map g= :unmap! :map!  
+map gc m_'m0i "_yws:'m,'_s/^/"_Pxhf/a& / "_d0x:@_
+map gu :'m,.s/ //
