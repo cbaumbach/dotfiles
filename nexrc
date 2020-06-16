@@ -19,10 +19,10 @@ map! jk 
 map!  :set tildeopm_b~e`_:set notildeopa
 
 " Replace tabs with spaces
-map gt m_:%s/	/    /g`_
+map gt m_:%s/	/    /g'_
 
 " Delete trailing whitespace and empty lines at end of file
-map gk m_:g/[ 	]+$/s///Go:?[^ 	]?+1,.d`_
+map gk m_:g/[ 	]+$/s///Go:?[^ 	]?+1,.d'_
 
 " Commenting
 map!  #
