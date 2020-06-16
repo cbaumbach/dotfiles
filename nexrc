@@ -30,5 +30,8 @@ map g= :unmap! :map! 
 map gc m_'m0i "_yws:'m,'_s/^/"_Pxhf/a& / "_d0x:@_
 map gu :'m,.s/ //
 
+" Formatting
+map gq !}fmt -70}
+
 " Replace buggy colon command history window
 map gg :w:e ~/.nexhistory:map  :unmap :w:y _:@_
