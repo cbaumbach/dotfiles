@@ -17,8 +17,8 @@ map! jk 
 " Toggle case of previous word
 map!  :set tildeopm_b~e`_:set notildeopa
 
-" Replace tabs with spaces
-map gt m_:%s/	/    /g'_
+" Replace tabs with 4 spaces
+map gt m_:g/	/s//    /g'_
 
 " Delete trailing whitespace and empty lines at end of file
 map gk m_:g/[ 	]+$/s///Go:?[^ 	]?+1,.d'_
