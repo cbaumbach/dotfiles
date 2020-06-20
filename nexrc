@@ -6,7 +6,6 @@ set filec=
 set iclower
 set leftright
 set ruler
-set searchincr
 set shiftwidth=4
 set showmatch
 set sidescroll=1
