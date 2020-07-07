@@ -17,3 +17,7 @@ map g= :unmap! :map! 
 map gc mz'm0i "zyws:'m,'zs:^:"zPT^xhf:a& : "zd0x:@z
 " Uncomment from 'm down (!) to current line
 map gu :'m,.s: ::
+
+" ==== Paragraph filling =============================================
+map gq !}fmt -w70 -g70}
+map gQ !}fmt -w70 -g70 -p\}
