@@ -21,3 +21,8 @@ map gu :'m,.s: ::
 " ==== Paragraph filling =============================================
 map gq !}fmt -w70 -g70}
 map gQ !}fmt -w70 -g70 -p\}
+
+" ==== File navigation ===============================================
+map gn :next
+map gp :prev
+map gr :rewind
