@@ -8,8 +8,8 @@ map! jk 
 map gg :w:e ~/.exhistory:map  :unmap :w:y z:@z
 
 " ==== Commenting ====================================================
-" Default comment character: //
-map!  //
+" Default comment character: #
+map!  #
 " Change comment character
 map g= :unmap! :map!  
 " Comment out from 'm down (!) to current line.  Will only work for
