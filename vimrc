@@ -34,3 +34,5 @@ map gD :!git diff
 map ga :!git add -p %
 map gA :!git add -p
 map gC :!git commit -v
+
+" ==== Customization =================================================
