@@ -26,3 +26,10 @@ map gQ !}fmt -w70 -g70 -p\}
 map gn :next
 map gp :prev
 map gr :rewind
+
+" ==== Git ===========================================================
+map gd :!git diff %
+map gD :!git diff
+map ga :!git add -p %
+map gA :!git add -p
+map gC :!git commit -v
