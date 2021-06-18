@@ -26,6 +26,7 @@ map gQ !}fmt -w70 -g70 -p\}
 map gn :next
 map gp :prev
 map gr :rewind
+map g  :e #
 
 " ==== Git ===========================================================
 map gd :!git diff %
