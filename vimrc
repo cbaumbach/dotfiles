@@ -14,9 +14,9 @@ map!  #
 map g= :unmap! :map!  
 " Comment out from 'm down (!) to current line.  Will only work for
 " lines with same whitespace prefix as line 'm.  Use :s/// otherwise.
-map gc mz'm0i "zyws:'m,'zs:^:"zPT^xhf:a& : "zd0x:@z
+map gc mz'm0i "zyws:'m,'zs:^:"zPT^xhf:a& : "zd0x:@z:'m,'zs/ $//e'z
 " Uncomment from 'm down (!) to current line
-map gu :'m,.s: ::
+map gu :'m,.s: \?::
 
 " ==== Paragraph filling =============================================
 map gq !}fmt -w70 -g70}
