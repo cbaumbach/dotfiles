@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+; Legend | Meaning
+; -------+--------
+;    L   | left
+;    R   | right
+;    A   | alt
+;    C   | ctrl
+;    W   | windows
+;
+; Key           | Scan code
+; --------------+----------
+; left control  |   00 1D
+; right control |   E0 1D
+; left alt      |   00 38
+; right alt     |   E0 38
+; left windows  |   E0 5B
+; right windows |   E0 5C
+;
+; Note: a scan code "12 34" would have to be entered as "34,12,"
+;
+; Right control is mapped to left (!) alt so that it works like Meta
+; in terminal emacs.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,05,00,00,00,1D,00,38,00,38,00,1D,00,1D,E0,38,E0,38,00,1D,E0,00,00,00,00
+;                 | version   | flags     | # entries | LC <-- LA | LA <-- LC | RC <-- RA | LA <-- RC | null entry
