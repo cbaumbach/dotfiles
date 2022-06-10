@@ -1,5 +1,5 @@
 sy off
-set cp ai et ic sm sw=4 ts=4
+set cp ai aw et ic sm sw=4 ts=4
 map! jk 
 
 " ==== Command history ===============================================
