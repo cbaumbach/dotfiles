@@ -1,22 +1,14 @@
 ! xterm --------------------------------------------------------------
-xterm*background: black
-xterm*foreground: white
-xterm*HiForeColor: white
-xterm*HiBackColor: black
-xterm*cursorColor: white
-xterm*cursorBlink: true
-xterm*cursorOffTime: 500
-xterm*cursorOnTime: 500
-xterm*scrollBar: false
-xterm*boldMode: false
-xterm*allowBoldFonts: false
-xterm*colorBDMode: true
-xterm*colorBD: gray
-xterm*geometry: 75x50
-xterm*utf8: 1
-xterm*font:     -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
-xterm*boldFont: -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
-xterm*eightBitInput: false
-xterm*altIsNotMeta: true
+xterm*cursorBlink:     true
+xterm*cursorOffTime:   500
+xterm*cursorOnTime:    500
+xterm*altIsNotMeta:    true
 xterm*metaSendsEscape: true
-xterm*altSendsEscape: true
+xterm*altSendsEscape:  true
+xterm*eightBitInput:   false
+xterm*utf8:            1
+xterm*allowBoldFonts:  false
+! xterm*font:          9x15
+! xterm*boldFont:      9x15
+xterm*font:            -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
+xterm*boldFont:        -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
