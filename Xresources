@@ -10,5 +10,5 @@ xterm*utf8:            1
 xterm*allowBoldFonts:  false
 ! xterm*font:          9x15
 ! xterm*boldFont:      9x15
-xterm*font:            -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
-xterm*boldFont:        -gnu-unifont-*-*-*-*-*-*-*-*-*-*-*
+xterm*font:            -gnu-unifont-*
+xterm*boldFont:        -gnu-unifont-*
