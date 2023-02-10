@@ -4,19 +4,17 @@ local({
     options(repos=r)
 })
 
-
-# Attach custom utility functions just after the global environment.
-#
-# .First can't be used because R's ?Startup sequence follows it with a
-# call to base::.First.sys which attaches more packages, in particular
-# package:utils which would shadow our vi function.
-
+# Add user functions to the search path just after the user's
+# workspace thereby ensuring that they survive an rm(list = ls()).
+# We use .First.sys and not .First since in R's ?Startup sequence
+# .First.sys runs after .First and attaches R's default packages which
+# could shadow user functions.  Defining our own version of .First.sys
+# in .Rprofile places it into the user's workspace and thus shadows
+# the default version in R's base package.  We call the shadowed
+# version explicitly and then add the user functions to the search
+# path.  Later changes to the search path can still cause shadowing.
 .First.sys <- function() {
     base::.First.sys()
-    .First.cb()
-}
-
-.First.cb <- function() {
 
     less <- function(object, ...) {
         page(object, method = "print", width = 9999, ...)
@@ -33,6 +31,6 @@ local({
         edit(file = file, editor = "vim")
     }
 
-    utils.cb <- list(less = less, vi = vi)
-    attach(utils.cb)
+    user <- list(less = less, vi = vi)
+    attach(user)
 }
