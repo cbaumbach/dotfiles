@@ -20,17 +20,20 @@ local({
         page(object, method = "print", width = 9999, ...)
     }
 
-    vi_file <- NULL
-    vi <- function(file = vi_file) {
+    # Call vim("<file>") to edit and then load file.  The path to the
+    # file needs to be passed only on the first call.  Later calls can
+    # omit it.  To edit an object in place, use x <- vi(x) instead.
+    vim_file <- NULL
+    vim <- function(file = vim_file) {
         if (!is.character(file)) {
             stop("Which file to edit? Pass path at least once.")
         } else if (!file.exists(file) && !file.create(file)) {
             stop("Failed to create file: ", file)
         }
-        vi_file <<- file
+        vim_file <<- file
         edit(file = file, editor = "vim")
     }
 
-    user <- list(less = less, vi = vi)
+    user <- list(less = less, vim = vim)
     attach(user)
 }
