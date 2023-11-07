@@ -1,0 +1,43 @@
+! Key bindings suitable for ThinkPad X220 laptop
+! with optional external IBM Model M keyboard.
+!
+! To use these key bindings, run the following at startup:
+!
+! /bin/bash -c "sleep 15; xmodmap $HOME/dotfiles/Xmodmap_thinkpad"
+
+clear Control
+clear Mod1
+clear Mod4
+clear Mod5
+
+! Alt_L to Control_L
+keycode 64 = Control_L
+
+! Alt_R to Control_R
+keycode 108 = Control_R
+
+! Super_L to Alt_L
+keycode 133 = Alt_L
+
+! Menu to Alt_R
+keycode 135 = Alt_R
+
+! Control_L to Alt_L
+keycode 37 = Alt_L
+
+! Control_R to Alt_R
+keycode 105 = Alt_R
+
+! If we did not have to support an external IBM Model M keyboard,
+! we would map the Control keys to Super and Hyper:
+!
+! Control_L to Super_L
+! keycode 37 = Super_L
+!
+! Control_R to Hyper_R
+! keycode 105 = Hyper_R
+
+add Control = Control_L Control_R
+add Mod1    = Alt_L Alt_R
+add Mod4    = Super_L
+add Mod5    = Hyper_R
