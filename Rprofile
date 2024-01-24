@@ -16,6 +16,17 @@ local({
 .First.sys <- function() {
     base::.First.sys()
 
+    install.packages <- function(...) {
+        cl <- match.call()
+        lib <- Sys.getenv("R_LIBS_USER")
+        if (lib == "") {
+            stop("R_LIBS_USER environment variables is undefined")
+        }
+        cl[["lib"]] <- lib
+        cl[[1L]] <- quote(utils::install.packages)
+        eval(cl, parent.frame())
+    }
+
     less <- function(object, ...) {
         page(object, method = "print", width = 9999, ...)
     }
@@ -34,6 +45,10 @@ local({
         edit(file = file, editor = "vim")
     }
 
-    user <- list(less = less, vim = vim)
+    user <- list(
+        install.packages = install.packages,
+        less = less,
+        vim = vim)
+
     attach(user)
 }
