@@ -1,43 +1,78 @@
-! Key bindings suitable for ThinkPad X220 laptop
-! with optional external IBM Model M keyboard.
+! Add symmetric Ctrl and Alt keys on either side of the space bar both
+! on the ThinkPad X220 keyboard and on an external Model M/F keyboard.
 !
-! To use these key bindings, run the following at startup:
+! Dvorak layout after this file's key mapping:        +----+----+----+----+  +----+----+----+
+!                                                     |PrSc|Scro|Paus|Inse|  |Dele|Home|PgUp|
+! +-----+                                             |reen|ll  |e   |rt  |  |te  |    |    |
+! |Esc  |-----+-----+----+----++----+----+-----+----+ +----+----+----+----+  |    |----|----|
+! |     |F1   |F2   |F3  |F4  ||F5  |F6  |F7   |F8  | |F9  |F10 |F11 |F12 |  |    |End |PgDn|
+! |     |     |     |    |    ||    |    |     |    | |    |    |    |    |  |    |    |    |
+! +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----------+
+! |  ~  |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  |  {  |  }  |Backspace  |
+! |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  [  |  ]  |           |
+! +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----------+
+! |Tab     |  "  |  <  |  >  |     |     |     |     |     |     |     |  ?  |  +  |Enter   |
+! |        |  '  |  ,  |  .  |  P  |  Y  |  F  |  G  |  C  |  R  |  L  |  /  |  =  |        |
+! +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-+      |
+! |Capslock  |     |     |     |     |     |     |     |     |     |     |  _  |  |  |      |
+! |          |  A  |  O  |  E  |  U  |  I  |  D  |  H  |  T  |  N  |  S  |  -  |  \  |      |
+! +----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+------+
+! |Shift  |  >  |  :  |     |     |     |     |     |     |     |     |     |Shift          |
+! |       |  <  |  ;  |  Q  |  J  |  K  |  X  |  B  |  M  |  W  |  V  |  Z  |               |
+! +-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+---------------+
+! |XF86W|Alt    |Alt |Ctrl |             Space            |Ctrl |Alt  |Alt  |(*) |Up   |(**)|
+! |akeUp|       |    |     |                              |     |     |     |---------------|
+! +-----+-------+----+-----+------------------------------+-----+-----+-----|Left|Down |Righ|
+!                                                                           +---------------+
+!                                                                           (*)  XF86Back
+!                                                                           (**) XF86Forward
 !
-! /bin/bash -c "sleep 15; xmodmap $HOME/dotfiles/Xmodmap_thinkpad"
+! Keycodes                                            +----+----+----+----+  +----+----+----+
+!                                                     |107 |78  |127 |118 |  |119 |110 |112 |
+! +-----+                                             |    |    |    |    |  |    |    |    |
+! |9    |-----+-----+----+----++----+----+-----+----+ +----+----+----+----+  |    |----|----|
+! |     |67   |68   |69  |70  ||71  |72  |73   |74  | |75  |76  |95  |96  |  |    |115 |117 |
+! |     |     |     |    |    ||    |    |     |    | |    |    |    |    |  |    |    |    |
+! +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----------+
+! |49   |10   |11   |12   |13   |14   |15   |16   |17   |18   |19   |20   |21   |22         |
+! |     |     |     |     |     |     |     |     |     |     |     |     |     |           |
+! +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----------+
+! |23      |24   |25   |26   |27   |28   |29   |30   |31   |32   |33   |34   |35   |36      |
+! |        |     |     |     |     |     |     |     |     |     |     |     |     |        |
+! +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-+      |
+! |66        |38   |39   |40   |41   |42   |43   |44   |45   |46   |47   |48   |51   |      |
+! |          |     |     |     |     |     |     |     |     |     |     |     |     |      |
+! +----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+------+
+! |50     |94   |52   |53   |54   |55   |56   |57   |58   |59   |60   |61   |62             |
+! |       |     |     |     |     |     |     |     |     |     |     |     |               |
+! +-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+---------------+
+! |151  |37     |133 |64   |65                            |108  |135  |105  |166 |111  |167 |
+! |     |       |    |     |                              |     |     |     |---------------|
+! +-----+-------+----+-----+------------------------------+-----+-----+-----|113 |116  |114 |
+!                                                                           +---------------+
 
-clear Control
-clear Mod1
-clear Mod4
-clear Mod5
+remove control = Control_L Control_R
+remove mod1 = Alt_L Alt_R
+remove mod4 = Super_L
 
-! Alt_L to Control_L
-keycode 64 = Control_L
+! Previously: Alt_L Meta_L Alt_L Meta_L
+keycode  64 = Control_L
 
-! Alt_R to Control_R
+! Previously: Alt_R Meta_R Alt_R Meta_R
 keycode 108 = Control_R
 
-! Super_L to Alt_L
+! Previously: Super_L
 keycode 133 = Alt_L
 
-! Menu to Alt_R
+! Previously: Menu
 keycode 135 = Alt_R
 
-! Control_L to Alt_L
-keycode 37 = Alt_L
+! Previously: Control_L
+keycode  37 = Alt_L
 
-! Control_R to Alt_R
+! Previously: Control_R
 keycode 105 = Alt_R
 
-! If we did not have to support an external IBM Model M keyboard,
-! we would map the Control keys to Super and Hyper:
-!
-! Control_L to Super_L
-! keycode 37 = Super_L
-!
-! Control_R to Hyper_R
-! keycode 105 = Hyper_R
-
-add Control = Control_L Control_R
-add Mod1    = Alt_L Alt_R
-add Mod4    = Super_L
-add Mod5    = Hyper_R
+add control = Control_L Control_R
+add mod1 = Alt_L Alt_R
+add mod4 = Super_L
