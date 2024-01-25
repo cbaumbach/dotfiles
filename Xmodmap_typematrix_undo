@@ -1,0 +1,24 @@
+! Undo the changes produced by Xmodmap_typematrix.
+
+remove shift = Shift_R
+remove control = Control_L Control_R
+remove mod1 = Alt_L Alt_R
+
+! Previously: Control_L
+keycode 102 = Muhenkan
+
+! Previously: Alt_L
+keycode 135 = Menu
+
+! Previously: Control_R
+keycode 100 = Henkan_Mode
+
+! Previously: Alt_R
+keycode 110 = Home
+
+! Previously: Shift_R
+keycode  97 = NoSymbol
+
+add shift = Shift_R
+add control = Control_L Control_R
+add mod1 = Alt_L Alt_R
