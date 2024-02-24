@@ -16,6 +16,7 @@ local({
 .First.sys <- function() {
     base::.First.sys()
 
+    # Install all packages into directory specified by R_LIBS_USER.
     install.packages <- function(...) {
         cl <- match.call()
         lib <- Sys.getenv("R_LIBS_USER")
